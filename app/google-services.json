@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "359052740052",
+    "project_id": "valleyball-a7d43",
+    "storage_bucket": "valleyball-a7d43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359052740052:android:b5d75eae171b0317534241",
+        "android_client_info": {
+          "package_name": "com.example.volleyball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359052740052-7f7ollb2j279a051mohpspvqvbf0vo1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.volleyball",
+            "certificate_hash": "bb82572b5a9169fcaca542fd744d7ddbebca5d1a"
+          }
+        },
+        {
+          "client_id": "359052740052-fvedqdajjlqepec3sak8g8cmnmr8egul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAavlIahCFXeh7hkUuQ4NCjhLsdgBYydX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359052740052-fvedqdajjlqepec3sak8g8cmnmr8egul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

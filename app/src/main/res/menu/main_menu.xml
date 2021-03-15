@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/nav_match"
+            android:title="Match"
+            />
+
+        <item
+            android:id="@+id/nav_creatematch"
+            android:title="Create Match"
+            />
+
+        <item
+            android:id="@+id/nav_rules"
+            android:title="Rules"
+            />
+
+
+    </group>
+
+
+
+
+    <item
+        android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="LogOut"/>
+
+
+            </group>
+        </menu>
+
+    </item>
+
+
+
+
+    <item
+        android:title="Communication">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_aboutus"
+                    android:title="AboutUs"/>
+
+                <item
+                    android:id="@+id/nav_contactus"
+                    android:title="Contact Us"/>
+
+            </group>
+        </menu>
+
+    </item>
+
+
+
+</menu>

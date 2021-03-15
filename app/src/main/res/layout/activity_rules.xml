@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rules"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00008577"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="Rules">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Rules And Regulations:"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:padding="5dp"
+        android:text="1. For females the registration fees shall be ₹ 800/- per team in open category and ₹ 800/- per team in school category.
+2. For open (men and women) category in football, kabaddi and volleyball, the age limit is 30 years (cut-off date 01/01/91).
+ 3. For basketball, there is no age limit for open (men) and open (women) category.
+4. Game of football will be 7 A-side.
+ 5. In any case the total players per team must not exceed 12.
+6. This is an open (boys and girls) tournament and age limit is 18 years (cut-off date 01/01/2003).
+ 7. Any entries after 15thMarch, 2021 shall not be considered.
+ 8. Each player should carry Aadhar card as photo ID proof and School Fee Receipt for School players at the time of reporting without which entry will not be permitted.
+ 9. Certificate of Participation will be awarded to all the participants.
+ 10. Winning team and Runner-up team of all the sports will get a trophy, medal and certificate of Appreciation.
+11. Tournament timings and venue may change as per the conditions on that date.
+ 12. In case of any dispute, the decision of Jury of Appeal shall be considered final.
+ 13. In case of any misconduct/ dispute with the players / coach / referee, the team shall be disqualified for further rounds.
+14. Providing stay for the players shall be our value-added feature of the tournament but not a privilege of the participating teams.
+15. The food expenses of the participating players shall not be borne by the host institute.
+16. Tentative Timings of the tournament:
+ Morning: 7:00 AM - 12:00PM
+ Evening: 5:00 PM - 1:00 AM "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</LinearLayout>

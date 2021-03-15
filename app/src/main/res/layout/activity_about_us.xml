@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00008577"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="About Us"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:padding="5dp"
+        android:text="About LJK"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="125dp"
+        android:padding="5dp"
+        android:text=" Lok Jagruti Kendra is a charitable trust and registered society. LJK was founded in the year 1980 by eminent academicians, professionals and distinguished personalities from across the society.
+
+It was the dream of Prof. B M Peerzada, an eminent academician cum economic thinker and former Dean of the Commerce Faculty (GU) to establish a world class professional system of education and research.
+
+Today this dream has become a reality in the shape of the LJ group of institutes comprising 23 institutes offering diverse range of programs.
+
+There are around 800 well-qualified and experienced faculties to train over 18,000 students drawn from across Gujarat."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="345dp"
+        android:padding="5dp"
+        android:text="LJISM"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="395dp"
+        android:padding="5dp"
+        android:text="L J Institute of Sports Management aims to provide holistic education in this field by offering a 3 year full time Bachelor in Business Administration with Sports Management Specialisation. With all state of the art facilities, the college intends to pave the right way for students seeking a rewarding career in the field of sports management. The course offered at LJISM proposes to produce the best talents in the field of sports management by equipping the students not only with the nuances of sports, but also with the managerial skills required to make these sports events successful. LJISM aims to impart classroom education along with practical internships, for which it has initiated associations with the best of the sports academies and institutions.
+LJISM is equipped with a lush green campus, advanced infrastructure, sports grounds, sports equipment, Audio-video aids and a very prosperous library. It has all the amenities required for a student of sports management. The proposed pedagogy involves theoretical knowledge provided through regular lectures, expert sessions, guest lectures, case studies. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
