@@ -37,7 +37,7 @@ public class Match extends AppCompatActivity {
 
         recyclerView = (RecyclerView)findViewById(R.id.matchlist);
 
-        Query query =db.collection("matches");
+        Query query =db.collection("matches").orderBy("timestamp", Query.Direction.DESCENDING);
 
         FirestoreRecyclerOptions<MyModel> match = new FirestoreRecyclerOptions.Builder<MyModel>()
                 .setQuery(query,MyModel.class)
