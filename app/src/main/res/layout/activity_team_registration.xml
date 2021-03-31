@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Team_registration">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00008577"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="Team Registration">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/TeamName"
+        android:layout_below="@+id/toolbar"
+        android:hint="Team Name"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="10dp"
+        android:editable="true"
+        />
+
+
+    <Button
+        android:id="@+id/btnteamname"
+        android:layout_marginLeft="25dp"
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/TeamName"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/teamregbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TeamName"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Add Team members details"
+        />
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/teamregbtn"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:background="#03DAC5"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="Age"
+                android:gravity="center"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="Gender"
+                android:gravity="center"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tablelayout"/>
+
+
+</RelativeLayout>

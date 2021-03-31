@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Volleyball">
+        <activity android:name=".Team_registration"></activity>
         <activity
             android:name=".Match"
             android:parentActivityName=".Main_Home" />
@@ -27,8 +28,9 @@
         <activity
             android:name=".Creatematch"
             android:parentActivityName=".Main_Home" />
-        <activity android:name=".scoring"
-            android:parentActivityName=".Creatematch"></activity>
+        <activity
+            android:name=".scoring"
+            android:parentActivityName=".Creatematch" />
         <activity android:name=".Main_Home" />
         <activity android:name=".Verify_otp" />
         <activity android:name=".Send_otp" />
