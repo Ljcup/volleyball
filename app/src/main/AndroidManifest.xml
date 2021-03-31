@@ -27,7 +27,8 @@
             android:parentActivityName=".Main_Home" />
         <activity
             android:name=".Creatematch"
-            android:parentActivityName=".Main_Home" />
+            android:parentActivityName=".Main_Home"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
         <activity
             android:name=".scoring"
             android:parentActivityName=".Creatematch" />
