@@ -82,6 +82,12 @@ public class Main_Home extends AppCompatActivity implements NavigationView.OnNav
                 Intent intent = new Intent(Main_Home.this,Creatematch.class);
                 startActivity(intent);
                 break;
+
+            case R.id.nav_teamdet:
+                Intent intent6 = new Intent(Main_Home.this,Team_registration.class);
+                startActivity(intent6);
+                break;
+
             case R.id.nav_logout:
                 logout();
                 break;

@@ -19,6 +19,11 @@
             />
 
         <item
+            android:id="@+id/nav_teamdet"
+            android:title="Team Registration"
+            />
+
+        <item
             android:id="@+id/nav_rules"
             android:title="Rules"
             />
