@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView logo;
     private static int TIME_OUT = 2000;
 
     @Override

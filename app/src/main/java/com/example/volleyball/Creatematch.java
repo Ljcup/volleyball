@@ -1,6 +1,7 @@
 package com.example.volleyball;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -27,10 +28,15 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 
 public class Creatematch extends AppCompatActivity {
@@ -94,13 +100,27 @@ public class Creatematch extends AppCompatActivity {
 
                     Timestamp timestamp = Timestamp.now();
                     Date date = timestamp.toDate();
-
                     Map<String,Object> match = new HashMap<>();
+
+                    Map<String,Integer> team2score = new HashMap<>();
+                    team2score.put("Set 1",0);
+                    team2score.put("Set 2",0);
+                    team2score.put("Set 3",0);
+                    team2score.put("Set 4",0);
+                    team2score.put("Set 5",0);
+                    
+                    Map<String,Integer> team1score = new HashMap<>();
+                    team1score.put("Set 1",0);
+                    team1score.put("Set 2",0);
+                    team1score.put("Set 3",0);
+                    team1score.put("Set 4",0);
+                    team1score.put("Set 5",0);
+
                     match.put("Team1",team1);
                     match.put("Team2",team2);
                     match.put("orguuid",orguuid);
-                    match.put("Team1score",0);
-                    match.put("Team2score",0);
+                    match.put("Team1score",team1score);
+                    match.put("Team2score", team2score);
                     match.put("timestamp",date);
 
 
