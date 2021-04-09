@@ -2,16 +2,13 @@ package com.example.volleyball;
 
 public class MyModel {
     private String Team1,Team2;
-    private int Team1score,Team2score;
 
     private MyModel(){
     }
 
-    private MyModel(String Team1,String Team2,int Team1score,int Team2score){
+    private MyModel(String Team1,String Team2,int Team1score,int Team2score,int Team1set1,int Team1set2,int Team1set3,int Team1set4,int Team1set5,int Team2set1,int Team2set2,int Team2set3,int Team2set4,int Team2set5){
         this.Team1 = Team1;
         this.Team2 = Team2;
-        this.Team1score = Team1score;
-        this.Team2score = Team2score;
     }
 
     public String getTeam1() {
@@ -28,21 +25,5 @@ public class MyModel {
 
     public void setTeam2(String team2) {
         Team2 = team2;
-    }
-
-    public int getTeam1score() {
-        return Team1score;
-    }
-
-    public void setTeam1score(int team1score) {
-        Team1score = team1score;
-    }
-
-    public int getTeam2score() {
-        return Team2score;
-    }
-
-    public void setTeam2score(int team2score) {
-        Team2score = team2score;
     }
 }
