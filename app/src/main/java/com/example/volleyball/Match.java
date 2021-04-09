@@ -55,8 +55,6 @@ public class Match extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull MyModel model) {
                 holder.team1name.setText(model.getTeam1());
                 holder.team2name.setText(model.getTeam2());
-                holder.team1score.setText(model.getTeam1score()+"");
-                holder.team2score.setText(model.getTeam2score()+"");
             }
         };
 
@@ -85,8 +83,6 @@ public class Match extends AppCompatActivity {
             super(itemView);
             team1name = itemView.findViewById(R.id.team1name);
             team2name = itemView.findViewById(R.id.team2name);
-            team1score = itemView.findViewById(R.id.team1score);
-            team2score = itemView.findViewById(R.id.team2score);
 
             linearLayout = itemView.findViewById(R.id.row);
         }
