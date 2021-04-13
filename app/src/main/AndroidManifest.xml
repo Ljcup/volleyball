@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Volleyball">
         <activity android:name=".MatchRView"
-            android:parentActivityName=".Match"></activity>
+            android:parentActivityName=".Match"/>
         <activity
             android:name=".Team_registration"
             android:parentActivityName=".Main_Home" />
