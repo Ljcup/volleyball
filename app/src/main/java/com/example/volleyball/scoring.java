@@ -33,7 +33,6 @@ public class scoring extends AppCompatActivity {
     Map<String, Object> Team1 = new HashMap<>();
     Map<String, Object> Team2 = new HashMap<>();
     int[] counter = {0,0,0};
-    String current_set;
     String[] sets = {"Set 1","Set 2","Set 3","Set 4","Set 5"};
 
     @Override

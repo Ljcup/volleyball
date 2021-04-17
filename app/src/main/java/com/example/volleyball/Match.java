@@ -6,12 +6,14 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
@@ -55,6 +57,13 @@ public class Match extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull MyModel model) {
                 holder.team1name.setText(model.getTeam1());
                 holder.team2name.setText(model.getTeam2());
+
+                holder.linearLayout.setOnClickListener(view -> {
+                   String id =  getSnapshots().getSnapshot(position).getId();
+                   Intent i = new Intent(Match.this,MatchRView.class);
+                   i.putExtra("docid",id);
+                   startActivity(i);
+                });
             }
         };
 
@@ -77,7 +86,7 @@ public class Match extends AppCompatActivity {
     }
 
     private class MyViewHolder extends RecyclerView.ViewHolder{
-        private TextView team1name,team2name,team1score,team2score;
+        private TextView team1name,team2name;
         LinearLayout linearLayout;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
